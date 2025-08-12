@@ -92,7 +92,10 @@ _Verify remote:_ `git remote -v`
 ### Push
 
 **Push local commits to remote main branch:**  
-`git push origin main`  
+`git push origin main`
+`git push -u origin main`
+We use -u to set upstream means if we want to continuously work on same project for long duration now if we want to push then simply we can use
+`git push`   
 
 ---
 
