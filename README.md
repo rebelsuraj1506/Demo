@@ -108,7 +108,10 @@ We use -u to set upstream means if we want to continuously work on same project 
 `git branch [branch-name]`  
 
 **Switch to another branch:**  
-`git checkout [branch-name]`  
+`git checkout [branch-name]`
+
+**Create a new branch:**
+`git checkout -b [new-branch-name]`  
 
 ---
 
