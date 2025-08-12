@@ -120,3 +120,39 @@ _Verify remote:_ `git remote -v`
 **Show commit history:**  
 `git log`  
 
+---
+
+## Show Commit History
+- `git log`  
+  Show commit history for the currently active branch.
+
+- `git log branchB..branchA`  
+  Show the commits that are in branchA but not in branchB.
+
+- `git log --follow [file]`  
+  Show the commits that changed a specific file, even if the file was renamed.
+
+## Remote Repositories
+- `git remote add [alias] [url]`  
+  Add a Git URL as an alias for a remote repository.
+
+- `git fetch [alias]`  
+  Fetch down all the branches from that Git remote without merging.
+
+## Merging & Pulling
+- `git merge [alias]/[branch]`  
+  Merge a remote branch into your current branch to bring it up to date.
+
+- `git pull`  
+  Fetch and merge any commits from the tracking remote branch.
+
+## Differences & Showing Commits
+- `git diff branchB...branchA`  
+  Show the diff of what is in branchA that is not in branchB.
+
+- `git show [SHA]`  
+  Show any Git object (commit, tag, tree) in human-readable format.
+
+## Pushing Changes
+- `git push [alias] [branch]`  
+  Transmit local branch commits to the remote repository branch.
