@@ -182,7 +182,7 @@ We use -u to set upstream means if we want to continuously work on same project 
 - `git reset [commit-hash]`  
   Reset with given hash number from `git log`.
 
-- `git reset --hard [commit]`  
+- `git reset --hard [commit-hash]`  
   Clear the staging area and working directory, rewriting them from the specified commit.
 
 ## Stashing Changes
