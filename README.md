@@ -132,6 +132,9 @@ _Verify remote:_ `git remote -v`
 - `git log --follow [file]`  
   Show the commits that changed a specific file, even if the file was renamed.
 
+- `git log --stat -M`  
+  Show all commit logs with a summary of changes, including moved/renamed file paths.
+
 ## Remote Repositories
 - `git remote add [alias] [url]`  
   Add a Git URL as an alias for a remote repository.
@@ -146,6 +149,9 @@ _Verify remote:_ `git remote -v`
 - `git pull`  
   Fetch and merge any commits from the tracking remote branch.
 
+- `git rebase [branch]`  
+  Apply commits from the current branch ahead of the specified branch (re-align history).
+
 ## Differences & Showing Commits
 - `git diff branchB...branchA`  
   Show the diff of what is in branchA that is not in branchB.
@@ -153,6 +159,36 @@ _Verify remote:_ `git remote -v`
 - `git show [SHA]`  
   Show any Git object (commit, tag, tree) in human-readable format.
 
-## Pushing Changes
-- `git push [alias] [branch]`  
-  Transmit local branch commits to the remote repository branch.
+## File & Directory Management
+- `git rm [file]`  
+  Delete the file from the project and stage the removal for commit.
+
+- `git mv [existing-path] [new-path]`  
+  Change an existing file path and stage the move.
+
+## Resetting Changes
+- `git reset --hard [commit]`  
+  Clear the staging area and working directory, rewriting them from the specified commit.
+
+## Stashing Changes
+- `git stash`  
+  Save modified and staged changes away temporarily and clean your working directory.
+
+- `git stash list`  
+  List all stashes in the stack in order.
+
+- `git stash pop`  
+  Apply the changes from the top stash and remove it from the stash stack.
+
+- `git stash drop`  
+  Discard (delete) the changes from the top stash of the stash stack.
+
+## Ignoring Files System-wide
+- `git config --global core.excludesfile [file]`  
+  Set a system-wide ignore pattern file (e.g., for global `.gitignore` rules).
+
+## .gitignore Patterns
+- Use a `.gitignore` file to specify untracked files or directories to ignore. Patterns can be:
+  - Exact names, e.g., `logs/`
+  - Wildcards, e.g., `*.notes`
+  - Directory matches, e.g., `pattern*/`
