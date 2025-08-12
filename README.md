@@ -1,99 +1,122 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Complete Git Commands Cheat Sheet</title>
-</head>
-<body>
-    <h1>Complete Git Commands Reference</h1>
+# Complete Git Commands Reference
 
-    <!-- CONFIGURATION -->
-    <b>Set your global username for commits:</b><br>
-    git config --global user.name "Firstname Lastname"<br>
-    <i>Set a name that is identifiable for credit when reviewing version history.</i><br><br>
+### Configuration
 
-    <b>Set your global email for commits:</b><br>
-    git config --global user.email "valid-email@example.com"<br>
-    <i>Set an email address associated with each commit in the history.</i><br><br>
+**Set your global username for commits:**  
+`git config --global user.name "Firstname Lastname"`  
+_Set a name that is identifiable for credit when reviewing version history._
 
-    <b>Enable automatic color output for Git commands:</b><br>
-    git config --global color.ui auto<br><br>
+**Set your global email for commits:**  
+`git config --global user.email "valid-email@example.com"`  
+_Set an email address associated with each commit in the history._
 
-    <b>Verify current Git configuration:</b><br>
-    git config --list<br><br>
+**Enable automatic color output for Git commands:**  
+`git config --global color.ui auto`  
 
-    <!-- INITIAL SETUP -->
-    <b>Create a new local repository:</b><br>
-    mkdir directory_name<br>
-    cd directory_name<br>
-    git init<br><br>
+**Verify current Git configuration:**  
+`git config --list`  
 
-    <b>Connect to a remote repository:</b><br>
-    git remote add origin &lt;repository-url&gt;<br>
-    git remote -v   <i>(Verify remote)</i><br><br>
+---
 
-    <b>Rename current branch to main:</b><br>
-    git branch -M main<br><br>
+### Initial Setup
 
-    <!-- CLONE -->
-    <b>Clone an existing remote repository locally:</b><br>
-    git clone &lt;repository-url&gt;<br><br>
+**Create a new local repository:**
+`mkdir directory_name`
+`cd directory_name`
+`git init`
 
-    <!-- STATUS -->
-    <b>Show current status of working directory and staging area:</b><br>
-    git status<br><br>
 
-    <!-- ADD & COMMIT -->
-    <b>Stage a specific file:</b><br>
-    git add [file]<br><br>
+**Connect to a remote repository:**  
+`git remote add origin <repository-url>`  
+_Verify remote:_ `git remote -v`
 
-    <b>Stage all changes:</b><br>
-    git add .<br><br>
+**Rename current branch to main:**  
+`git branch -M main`  
 
-    <b>Unstage a staged file (keep changes):</b><br>
-    git reset [file]<br><br>
+---
 
-    <b>Commit staged changes with a message:</b><br>
-    git commit -m "Your descriptive commit message"<br><br>
+### Clone
 
-    <b>Stage & commit tracked file changes in one step (skip for new files):</b><br>
-    git commit -am "Your message"<br><br>
+**Clone an existing remote repository locally:**  
+`git clone <repository-url>`  
 
-    <!-- DIFF -->
-    <b>Show unstaged changes:</b><br>
-    git diff<br><br>
+---
 
-    <b>Show staged changes:</b><br>
-    git diff --staged<br><br>
+### Status
 
-    <!-- PULL -->
-    <b>Pull latest changes from remote main branch:</b><br>
-    git pull origin main<br><br>
+**Show current status of working directory and staging area:**  
+`git status`  
 
-    <b>Pull and allow unrelated histories:</b><br>
-    git pull origin main --allow-unrelated-histories<br><br>
+---
 
-    <!-- PUSH -->
-    <b>Push local commits to remote main branch:</b><br>
-    git push origin main<br><br>
+### Add & Commit
 
-    <!-- BRANCHES -->
-    <b>List all branches (* shows active branch):</b><br>
-    git branch<br><br>
+**Stage a specific file:**  
+`git add [file]`  
 
-    <b>Create a new branch:</b><br>
-    git branch [branch-name]<br><br>
+**Stage all changes:**  
+`git add .`  
 
-    <b>Switch to another branch:</b><br>
-    git checkout [branch-name]<br><br>
+**Unstage a staged file (keep changes):**  
+`git reset [file]`  
 
-    <!-- MERGE -->
-    <b>Merge another branch into current branch:</b><br>
-    git merge [branch-name]<br><br>
+**Commit staged changes with a message:**  
+`git commit -m "Your descriptive commit message"`  
 
-    <!-- LOG -->
-    <b>Show commit history:</b><br>
-    git log<br><br>
-</body>
-</html>
+**Stage & commit tracked file changes in one step (skip for new files):**  
+`git commit -am "Your message"`  
+
+---
+
+### Diff
+
+**Show unstaged changes:**  
+`git diff`  
+
+**Show staged changes:**  
+`git diff --staged`  
+
+---
+
+### Pull
+
+**Pull latest changes from remote main branch:**  
+`git pull origin main`  
+
+**Pull and allow unrelated histories:**  
+`git pull origin main --allow-unrelated-histories`  
+
+---
+
+### Push
+
+**Push local commits to remote main branch:**  
+`git push origin main`  
+
+---
+
+### Branches
+
+**List all branches (* shows active branch):**  
+`git branch`  
+
+**Create a new branch:**  
+`git branch [branch-name]`  
+
+**Switch to another branch:**  
+`git checkout [branch-name]`  
+
+---
+
+### Merge
+
+**Merge another branch into current branch:**  
+`git merge [branch-name]`  
+
+---
+
+### Log
+
+**Show commit history:**  
+`git log`  
 
