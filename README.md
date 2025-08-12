@@ -11,7 +11,7 @@ set an email address that will be associated with each history marker<br>
 git clone [url]<br>
 retrieve an entire repository from a hosted location via URL<br>
 
-<p><strong>Show modified files in the working directory, staged files, and untracked files.</p><br>
+<p><strong>Show modified files in the working directory, staged files, and untracked files.</p>
 git status<br>
 
 Remove a file from the staging area but keep its changes in the working directory.<br>
