@@ -176,6 +176,12 @@ We use -u to set upstream means if we want to continuously work on same project 
   Change an existing file path and stage the move.
 
 ## Resetting Changes
+- `git reset HEAD~1`
+  Used for last commit reset.
+
+- `git reset [commit-hash]`
+  commited hash we can find from `git log`.
+
 - `git reset --hard [commit]`  
   Clear the staging area and working directory, rewriting them from the specified commit.
 
