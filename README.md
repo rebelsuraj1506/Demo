@@ -21,8 +21,8 @@ _Set an email address associated with each commit in the history._
 ### Initial Setup
 
 **Create a new local repository:**
-`mkdir directory_name`
-`cd directory_name`
+`mkdir directory_name`<br>
+`cd directory_name`<br>
 `git init`
 
 
