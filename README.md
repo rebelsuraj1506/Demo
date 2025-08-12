@@ -113,6 +113,9 @@ We use -u to set upstream means if we want to continuously work on same project 
 **Create a new branch:**  
 `git checkout -b [new-branch-name]`
 
+**Delete some branch:**  
+`git branch -d [branch-name]`
+
 ---
 
 ### Merge
