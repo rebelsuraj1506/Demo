@@ -1,4 +1,4 @@
-#GIT COMMANDS
+# GIT COMMANDS
 # Complete Git Commands Reference
 
 ### Configuration
