@@ -201,3 +201,5 @@ We use -u to set upstream means if we want to continuously work on same project 
   - Exact names, e.g., `logs/`
   - Wildcards, e.g., `*.notes`
   - Directory matches, e.g., `pattern*/`
+
+Owned by Suraj Anand
